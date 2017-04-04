@@ -2,6 +2,11 @@
 
 a {
   color: $primary-color;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($primary-color, 50%);
+  }
 }
 
 button {
@@ -13,11 +18,13 @@ button {
 input {
   color: $primary-color;
   border-radius: $base-border-radius;
+  border-style: solid;
 }
 
 textarea {
   border-radius: $base-border-radius;
   color: $random-color-1;
+  border-style: solid;
 }
 
 label {
